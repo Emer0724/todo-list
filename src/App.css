@@ -1,0 +1,41 @@
+:root{
+  --maindeepblue:#8594c5;
+}
+.container{
+  position: relative;
+  margin: auto;
+  width: 550px;
+  height: 800px;
+  background:linear-gradient(to bottom, #EFF7FD, #ECEEFF  );
+  border:2px solid black;
+}
+.box{
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+h1{
+  color:var(--maindeepblue);
+  font-weight:normal;
+  margin: 0;
+}
+.hint{
+  color: #b5bdcd;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+}
+.playground{
+  margin-top: 10px;
+  border: 1px solid green;
+  margin-bottom: 18px;
+}
+.add{
+  position: absolute;
+  bottom:25px ;
+}
+.text{
+  color:var(--maindeepblue);
+  font-weight: normal;
+}
