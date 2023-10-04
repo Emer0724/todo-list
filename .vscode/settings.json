@@ -3,5 +3,9 @@
         "activityBar.background": "#27310A",
         "titleBar.activeBackground": "#36450E",
         "titleBar.activeForeground": "#F9FCEF"
-    }
+    },
+  // 啟用 emmet  
+  "emmet.includeLanguages": {  
+    "javascript":"javascriptreact"
+  },
 }
