@@ -4,14 +4,19 @@
     align-items: center;
     height: 40px;
 }
-.bar{
-    height: 14px;
-    width: 95%;
-    border-radius: 6px;
-    background-color:#95b2fd;
-}
 .rate{
     color:var(--maindeepblue);
     margin-right: 5px;
     font-weight: normal;
+}
+.bar{
+    height: 14px;
+    width: 95%;
+    border-radius: 6px;
+    background-color:white;
+}
+.indicator{
+    height: 14px;
+    border-radius: 6px;
+    background-color:#95b2fd;
 }

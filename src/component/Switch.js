@@ -1,12 +1,14 @@
 import React from 'react'
+import styles from './Switch.module.css'
+
 
 export default function Switch() {
   return (
     <>
     <div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
-  <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-</div>
+      <input className={`form-check-input ${styles.ss}`} type="checkbox" role="switch" />
+    </div>
     </>
   )
+
 }
