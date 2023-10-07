@@ -18,6 +18,8 @@
   width: 550px;
   height: 800px;
   background:linear-gradient(to bottom, #EFF7FD, #ECEEFF  );
+  /* border: 1px solid yellow; */
+  overflow-y: scroll;
 }
 .box{
   position: relative;
