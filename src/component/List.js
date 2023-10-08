@@ -6,17 +6,16 @@ import styles from './List.module.css'
 export default function List(props) {
   const {task,deleteTask, updated}=props
   const {content, done}= task
-  const [isDone, setIsdone] =useState(done)
+  console.log(`${content}:${done}`);
   return (
     <>
     <div className={styles.container}>
       <input 
       type="checkbox"  
       className={styles.done} 
-      checked={isDone} //連動狀態 
+      checked={done} //讓checkbox與該任務的done狀態連動
       onChange={()=>{
-        setIsdone(!isDone)
-        const updatedTask={...task, done: !isDone}
+        const updatedTask={...task, done: !done}
         updated(updatedTask);
       }}
        />
