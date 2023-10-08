@@ -48,6 +48,11 @@ h1{
   margin-top: 10px;
   margin-bottom: 18px;
 }
+.noTask{
+  font-size: 28px;
+  text-align: center;
+  color: var(--maindeepblue);
+}
 .switch{
   width: 100%;
   display: flex;

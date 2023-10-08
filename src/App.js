@@ -80,8 +80,8 @@ const sortTask = ()=>{
       <div className="playground-container">
         <div className="playground">
           {/* 依照tasks陣列內的內容生成list元件 */}
-          {tasks && tasks.length ? (tasks.map((task,index)=>(
-          <List task={task} key={index} deleteTask={deleteTask} updated={updated} />))):<p>尚無待辦事項</p>}
+          { tasks.length === 0 ? (<p className='noTask'>尚無待辦事項</p>): (sortTask().map((task, index) => (
+          <List task={task} key={index} deleteTask={deleteTask} updated={updated} />)))}
         </div>
       </div>
       <hr />
@@ -89,7 +89,7 @@ const sortTask = ()=>{
       <div className="switch_title">
       <p>Move done things to end?</p>
       </div>  
-        <Switch />
+        <Switch setIsSorted={setIsSorted}/>
         {/* <Switch /> */}
       </div>
         <div className="add">

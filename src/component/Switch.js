@@ -2,12 +2,14 @@ import React,{useState} from 'react'
 import styles from './Switch.module.css'
 
 
-export default function Switch() {
+export default function Switch(props) {
   const [isOn, setIsOn]= useState(false); 
+  const {setIsSorted} = props
 
 
   const modeChange = ()=>{
     setIsOn(!isOn)
+    setIsSorted(isOn)
   }
   return (
     <>
@@ -16,7 +18,7 @@ export default function Switch() {
       className={`form-check-input ${styles.ss}`} 
       type="checkbox" 
       role="switch" 
-      checked={isOn} //連動狀態
+      checked={!isOn} //連動狀態
       onChange={modeChange}
       />
     </div>
