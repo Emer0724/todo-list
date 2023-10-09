@@ -9,7 +9,7 @@ export default function Switch(props) {
 
   const modeChange = ()=>{
     setIsOn(!isOn)
-    setIsSorted(isOn)
+    setIsSorted(!isOn)
   }
   return (
     <>
@@ -18,7 +18,7 @@ export default function Switch(props) {
       className={`form-check-input ${styles.ss}`} 
       type="checkbox" 
       role="switch" 
-      checked={!isOn} //連動狀態
+      checked={isOn} //連動狀態
       onChange={modeChange}
       />
     </div>

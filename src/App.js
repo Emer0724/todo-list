@@ -90,7 +90,6 @@ const sortTask = ()=>{
       <p>Move done things to end?</p>
       </div>  
         <Switch setIsSorted={setIsSorted}/>
-        {/* <Switch /> */}
       </div>
         <div className="add">
           <h3 className='text'>Add to list</h3>
